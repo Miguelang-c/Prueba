@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="sp">
+  <head>
+    <title>Titulo de la pagina</title>
+    <meta charset="utf-8" />
+  </head>
+
+  <body>
+    <!-- Sección para mostrar la hora actual -->
+    <h1>Ejercicio 1</h1>
+    <p>La hora actual es: <span id="hora"></span></p>
+    <button onclick="mostrarHora()">Mostrar Hora</button>
+
+    <!-- Sección para setTimeout -->
+    <h2>Ejemplo con setTimeout</h2>
+    <button onclick="iniciarTemporizador()">Iniciar Temporizador</button>
+    <p id="mensajeTimeout"></p>
+
+    <!-- Sección para setInterval -->
+    <h2>Ejemplo con setInterval</h2>
+    <button onclick="iniciarContador()">Iniciar Contador</button>
+    <button onclick="detenerContador()">Detener Contador</button>
+    <button onclick="resetearContador()">Resetear Contador</button>
+    <p id="contador">Tiempo: 0 segundos</p>
+  </body>
+
+  <script src="scripts.js"></script>
+
+</html>

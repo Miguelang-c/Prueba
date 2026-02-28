@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="sp">
+  <head>
+    <title>Titulo de la pagina</title>
+    <meta charset="utf-8" />
+  </head>
+
+  <body>
+    <label for="nombre">Nombre: </label>
+    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" />
+    <!-- Comentario HTML -->
+    <h1>Clase de botones</h1>
+    <label for="boton1">Pulse para mostrar: </label>
+    <button id="boton1" class="boton" onclick="funcion()"
+    style="background-color: blue;">Boton 1 <b>letrero <i>uno</i></b></button>
+    <label for="Nombre editado">Otra cosa: </label>
+    <input type="text" id="salida" name="salida" /> 
+
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ul>
+
+    <ol>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li> 
+    </ol>
+
+    <img src="Bob.jpg" alt="Bob Esponja" width="100" height="200" />
+
+    <table style="color: aqua;">
+        <tr>
+            <th>Encabezado 1</th>
+            <th>Encabezado 2</th>
+            <th>Encabezado 3</th>
+        </tr>
+        <tr>
+            <td>Dato 1</td>
+            <td style="color: red;">Dato 2</td>
+            <td>Dato 3</td>
+        </tr>
+        <tr>
+            <td>Dato 4</td>
+            <td>Dato 5</td>
+            <td>Dato 6</td>
+        </tr>
+    </table>
+  </body>
+
+  <script>
+    //Global
+    var variableGlobal = "Soy una variable global";
+    var numeroGlobal = 10;
+    var listaGlobal = [1, 2, 3, 4, 5];
+    // Comentario JS
+    function funcion() {
+        let variableLocal = "Soy una variable local";
+        console.log(variableGlobal);
+        //Leer variables
+        let nombre = document.getElementById("nombre").value;
+        console.log(nombre);
+        document.getElementById("salida").value = "Hola " + nombre;
+        //Estructuras de control
+        if (numeroGlobal > 5) {
+            console.log("   1   ");
+            console.log("  213  ");
+        } else {
+            console.log("El numero global es menor o igual que 5");
+        }
+        //else if
+        if (numeroGlobal > 15) {
+            console.log("El numero global es mayor que 15");
+        } else if (numeroGlobal > 5) {
+            console.log("El numero global es mayor que 5 pero menor o igual que 15");
+        } else {
+            console.log("El numero global es menor o igual que 5");
+        }
+        //for (length, cuantos elementos)
+        for (let i = 0; i < listaGlobal.length; i++) {
+            console.log(listaGlobal[i]);
+        }
+
+        //while (condicion)
+        let contador = 0;   
+        while (contador < listaGlobal.length) {
+            console.log(listaGlobal[contador]);
+            contador++;
+        }
+    }
+   </script>
+
+</html>
